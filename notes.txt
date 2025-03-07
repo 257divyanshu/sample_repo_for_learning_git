@@ -1,0 +1,12 @@
+git rm --cached <file>
+- removes a file from the staging area, but keeps it in the working area
+- the file becomes untracked (git will ignore it in future commits)
+- useful when you accidentally added a file and want to remove it from tracking without deleting it
+
+git restore --staged <file>
+- to unstage a staged file
+
+git restore <file>
+- restores changes in the working directory from the last committed version
+- does not affect the staging area (unless --staged is used)
+- does not remove the file from git tracking
