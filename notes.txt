@@ -1,3 +1,28 @@
+
+
+git config --global --unset core.pager
+- to rollback to the old configuration, which used pager for logs
+
+git config --global core.pager cat
+- for configuring git to never use pager for logs
+
+what does pager mean in the current context
+- in Git (and Unix-like systems), a pager is a program that displays text one screen at a time, allowing you to scroll through long outputs instead of having everything printed at once.
+- This helps when the output is long and doesn’t fit on one screen.
+- The pager waits for user input, which is why Git Bash seems "stuck" at (END).
+
+git --no-page log
+- displays the summary without a pager
+
+git log --online
+- displays the summary in one line
+
+git log -n 5
+- will display the data about previous 5 commits
+
+git log
+- displays the data about previous commits
+
 git remote add origin "url"
 - to add a remote repository to your local git repository
 
@@ -17,4 +42,4 @@ git restore <file>
 - does not affect the staging area (unless --staged is used)
 - does not remove the file from git tracking
 
-hare krishna hare krishna krishna krishna hare hare hare rama hare rama rama rama hare hare
+hare krishna
