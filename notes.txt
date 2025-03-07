@@ -1,3 +1,9 @@
+git remote add origin "url"
+- to add a remote repository to your local git repository
+
+git remote -v
+- to check remote repositories linked to our local git repository
+
 git rm --cached <file>
 - removes a file from the staging area, but keeps it in the working area
 - the file becomes untracked (git will ignore it in future commits)
